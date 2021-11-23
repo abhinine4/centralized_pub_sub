@@ -1,0 +1,38 @@
+<h ><strong>SUBSCRIBER PAGE</strong></h>
+<br>
+<!--<form action="/subscribers">-->
+<!--  <p><i>View notifications : </i></p>-->
+<!--  Subscriber ID : <input type="text" name="subscriberid">-->
+<!--  <input type = "submit" name = "notifications" value = "notifications"/>-->
+<!--</form>-->
+<body>
+<form action="/subscribers" method="POST">
+  <p><i>Subscribe or View : </i></p>
+  Subscriber ID : <input type="text" name="subscriberid">
+  @
+  <select name = "dropdown">
+    <option value = "1">Dad Joke</option>
+    <option value = "2">Random Advice</option>
+    <option value = "3">Inspirational Quotes</option>
+  </select>
+  <input type = "submit" name = "submit" value = "subscribe">
+  OR
+  <input type = "submit" name = "submit" value = "unsubscribe">
+   ||
+  <input type = "submit" name = "submit" value="updates">
+  OR
+  <input type = "submit" name = "submit" value="notifications">
+</form>
+
+<br>
+<p><strong>{{msg}}</strong></p>
+
+<p><strong>{{u}}</strong></p>
+
+<br>
+<form action="/">
+    <button class="button" >Log out</button>
+</form>
+
+
+
